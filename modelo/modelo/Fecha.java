@@ -8,6 +8,7 @@ public class Fecha{
     private int mes;
     private int year;
     private int dias;
+    private int diasA = 0;
     private String x;
 
     // -----------------
@@ -99,13 +100,23 @@ public class Fecha{
         }else{
             x = dia + "/ 12";
         }
-        return x;
+
+        if(dias > 360){
+            year = year + 1;
+        }else{
+            year = year + 0;
+        }
+
+        return x + "/"+ year;
     }
 
     // Método para adicionar días a una fecha
     public String addDias(int d){
-        this.dias = d;
-
+        this.diasA = d;
+        int y = getMes();
+        y = fechaToDias();
+        d = d + y;
+        return diasToFecha();
     }
 
     // Métodos de acceso (setter and getter)

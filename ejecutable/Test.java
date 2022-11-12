@@ -14,10 +14,7 @@ public class Test {
         System.out.println("Mes: "+ f.getMes());
         System.out.println("Año: "+ f.getYear());
         System.out.println(f);
-        System.out.println("Día: "+ f2.getDia());
-        System.out.println("Mes: "+ f2.getMes());
-        System.out.println("Año: "+ f2.getYear());
-        System.out.println(f2);
+        System.out.println(f2.addDias(30));
         System.out.println(f3);
 
         if(f.equals(f2)){

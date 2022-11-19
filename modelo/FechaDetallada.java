@@ -3,7 +3,6 @@ package modelo;
 public class FechaDetallada extends Fecha{
     // Atributos
     String mesDetallado = "";
-    String rta;
     int dias;
 
     // Constructor
